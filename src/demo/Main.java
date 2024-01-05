@@ -5,12 +5,12 @@ import java.util.List;
 
 import bases.Human;
 import bases.Monster;
-import bases.humans.Brave;
-import bases.humans.Fighter;
-import bases.humans.Wizard;
-import bases.monsters.Dragon;
-import bases.monsters.Oak;
-import bases.monsters.Slime;
+import humans.Brave;
+import humans.Fighter;
+import humans.Wizard;
+import monsters.Dragon;
+import monsters.Oak;
+import monsters.Slime;
 import utils.Dice;
 
 public class Main {

@@ -1,4 +1,4 @@
-package bases.humans;
+package humans;
 
 import bases.Human;
 import utils.Dice;
