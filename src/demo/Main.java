@@ -85,19 +85,19 @@ public class Main {
 			System.out.println("\n[モンスターのターン！]\n");
 
 			// 人間グループから1人選択
-			Human human1 = choiceHuman(humans);
+			human = choiceHuman(humans);
 
 			// モンスターグループから1人選択
-			Monster monster1 = choiceMonster(monsters);
+			monster = choiceMonster(monsters);
 
 			// 選ばれたモンスターが、選ばれた人間を攻撃
-			monster1.attack(human1);
+			monster.attack(human);
 
 			// 人間のHPが0以下になれば、人間は倒れ、その人間をモンスターグループから削除
-			if (human1.getHp() < 0) {
+			if (human.getHp() < 0) {
 				System.out.println("");
-				System.out.println(" ★ 「" + human1.getName() + "」は倒れた。");
-				humans.remove(human1);
+				System.out.println(" ★ 「" + human.getName() + "」は倒れた。");
+				humans.remove(human);
 			}
 
 			// 人間グループに誰もいなくなれば、人間グループの敗北
